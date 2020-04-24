@@ -6,6 +6,16 @@ const user = {
     password: "password"
 };
 
+describe("jokes route", () => {
+    describe("Get request for all jokes", () => {
+        it("should return 200 status", async function () {
+            request(server)
+            .get("/")
+            .expect(200)
+        })
+    });
+})
+
 describe("register route", () => {
   it("should run the tests", () => {
     expect(true).toBe(true);
